@@ -45,8 +45,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-text-align-right"></span>
         </button>
-        <div class="collapse navbar-collapse flex-sm-row-reverse" >
-            <ul class=" nav navbar-nav menu"id="headernav">
+        <div class="collapse navbar-collapse flex-sm-row-reverse"id="headernav" >
+            <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
                 </li>
@@ -574,13 +574,14 @@
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+
 <script>
     $(document).ready(function(){
       // Add scrollspy to <body>
       $('body').scrollspy({target: ".navbar", offset: 50});   
     
       // Add smooth scrolling on all links inside the navbar
-      $("#myNavbar a").on('click', function(event) {
+      $("#headernav a").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           // Prevent default anchor click behavior
