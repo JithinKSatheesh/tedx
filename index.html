@@ -8,7 +8,7 @@
     <meta name="author" content="TEDxCUSAT">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
-    <title> TedX CUSAT </title>
+    <title> TedXCUSAT </title>
     <!-- ========== Favicon Ico ========== -->
     <!--<link rel="icon" href="fav.ico">-->
     <!-- ========== STYLESHEETS ========== -->
@@ -36,7 +36,7 @@
 <header class="header navbar fixed-top navbar-expand-md">
     <div class="container">
         <a class="navbar-brand logo" href="#">
-           <!-- <img src="assets/img/logo.png" alt="Evento"/> -->(logo)
+           <img src="assets/img/logo1.jpeg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-text-align-right"></span>
@@ -58,7 +58,7 @@
                 <li class="nav-item">
                     <a class="nav-link " href="#">Contact</a>
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -76,7 +76,7 @@
                             <h2 class="cover-title">
                                 Prepare yourself for the
                             </h2>
-                            <strong class="cover-xl-text">TED<sup>x</sup>CUSAT</strong>
+                            <strong class="cover-xl-text">TEDxCUSAT</strong>
                             <p class="cover-date">
                                 13 AUGUST 2019  , CUSAT KALAMASSERY.
                             </p>
@@ -96,7 +96,7 @@
                             <h2 class="cover-title">
                                 Prepare yourself for the
                             </h2>
-                            <strong class="cover-xl-text">TED<sup>x</sup>CUSAT</strong>
+                            <strong class="cover-xl-text">TEDxCUSAT</strong>
                             <p class="cover-date">
                                  13 AUGUST 2019  , CUSAT KALAMASSERY.
                             </p>
@@ -116,7 +116,7 @@
                             <h2 class="cover-title">
                                 Prepare yourself for the
                             </h2>
-                            <strong class="cover-xl-text">TED<sup>x</sup>CUSAT</strong>
+                            <strong class="cover-xl-text">TEDxCUSAT</strong>
                             <p class="cover-date">
                                 13 AUGUST 2019  , CUSAT KALAMASSERY.
                             </p>
@@ -136,7 +136,7 @@
             <li  data="1"><span>-</span></li>
             <li  data="2"><span>-</span></li>
         </ul>
-    </div> 
+    </div>
 </section>
 <!--cover section slider end -->
 
@@ -164,19 +164,19 @@
     <div class="container">
         <div class="section_title">
             <h3 class="title">
-                What is TED<sup>x</sup>CUSAT
+                What is <span style="color:#c92216;">TED<sup style="font-size:20px;">x</sup></span>CUSAT
             </h3>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-12">
                 <p>
-                    We present to you the first edition of TED<sup>x</sup>CUSAT with the aim of celebrating the idea of TED-'Ideas worth spreading' at the Cochin University of Science and Technology campus. This season will give a platform to people from all walks of life who help inspire and catalyse our lives into powerful and better versions of ourselves. For some, this event will mean life as they have yet to experience it and for others, it will mean transcending boundaries. We believe that genius ideas are generated when different people come together under one roof and these ideas have the potential to change attitudes, society and ultimately the world. Such stories of endeavour and experience will urge you to doubt reasons, redefine your definitions and play a part in progressing forward for the greater good. All set to ignite some sweet rebellions and ask many big questions, the first ever event of its kind here will create conversations that matter and spread ideas worth spreading. Are you ready to be radically open about the stuff of life? We are!
+                    We present to you the first edition of <span style="color:#c92216;">TED<sup style="font-size:10px;">x</sup></span>CUSAT with the aim of celebrating the idea of TED-'Ideas worth spreading' at the Cochin University of Science and Technology campus. This season will give a platform to people from all walks of life who help inspire and catalyse our lives into powerful and better versions of ourselves. For some, this event will mean life as they have yet to experience it and for others, it will mean transcending boundaries. We believe that genius ideas are generated when different people come together under one roof and these ideas have the potential to change attitudes, society and ultimately the world. Such stories of endeavour and experience will urge you to doubt reasons, redefine your definitions and play a part in progressing forward for the greater good. All set to ignite some sweet rebellions and ask many big questions, the first ever event of its kind here will create conversations that matter and spread ideas worth spreading. Are you ready to be radically open about the stuff of life? We are!
                 </p>
             </div>
-           
+
         </div>
 
-       
+
     </div>
 </section>
 <!--about the event end -->
@@ -405,8 +405,43 @@
 </section>
 <!--price section end -->
 
+<!--Map section-->
+<link href="assets/css/venue.css" rel="stylesheet">
+      <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-97195891-5', 'auto');
+ga('send', 'pageview');
+</script>
+<body>
+<div class="venue-container container">
+<div id="map"></div>
+<a target="_blank" href="https://www.google.co.in/maps/dir/10.0463232,76.3321227/Seminar+Complex,+University+Road,+South+Kalamassery,+Kalamassery,+Ernakulam,+Kerala/@10.044666,76.3266431,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b080d223eeb1de1:0xce06a9f0d256857a!2m2!1d76.3247875!2d10.0437276" class="directions">Get Directions</a>
+</div>
 
+<script>
+var map;
+function initMap() {
+var myLatLng = {lat:10.0437276, lng: 76.3247875};
+map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 18
+});
+var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: "School of Engineering(CUSAT),KALAMASSERY"
+});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuag7lvuXRCvnbG9thsUdkXiGkPWtzV0&callback=initMap"
+async defer></script>
 
+</div>
+</body>
+<!--map section-->
 
 
 <!--footer start -->
@@ -418,8 +453,7 @@
                 <div class="footer_box">
                     <div class="footer_header">
                         <div class="footer_logo">
-                           <!-- <img src="assets/img/logo.png" alt="evento"> -->
-                           (LOGO ---)
+                           <img src="assets/img/logo1.jpeg" alt="logo">
                         </div>
                     </div>
                     <div class="footer_box_body">
@@ -509,11 +543,11 @@
         </div>
     </div>
 </footer>
-<div class="copyright_footer">
+<div class="copyright_footer" >
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 col-12">
-                <p><!-- . --></p>
+            <div class="col-md">
+            <p>This independent TEDx event is operated under license from TED</p>
             </div>
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
@@ -532,11 +566,14 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
+
                 </ul>
+
             </div>
+
         </div>
-    </div>
-</div>
+        </div>
+      </div>
 <!--footer end -->
 
 <!-- jquery -->
