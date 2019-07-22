@@ -221,10 +221,21 @@
             <div class="speaker_box">
                 <div class="speaker_img">
                     <img src="assets/img/speakers/s1.png" alt="speaker name">
-                    <div class="info_box">
+                    <div class="info_box" id="info_box">
                         <h5 class="name">Patricia Stone</h5>
                         <p class="position">CEO Company</p>
                     </div>
+                    <div class="overlay" id="overlay" style="display:none;"></div>
+
+                    <div class="box" id="box">
+                    <a class="boxclose" id="boxclose"></a>
+                    <h1>Important message</h1>
+                    <p>
+                    Here comes a very important message for your user.
+                    Turn this window off by clicking the cross.
+                    </p>
+                    </div>
+            
                 </div>
             </div>
         </div>
@@ -574,7 +585,21 @@
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<script>
+    $(function() {
+    $('#info_box').click(function(){
+        $('#overlay').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},500);
+        });
+    });
+    $('#boxclose').click(function(){
+        $('#box').animate({'top':'-200px'},500,function(){
+            $('#overlay').fadeOut('fast');
+        });
+    });
 
+});
+</script>
 <script>
     $(document).ready(function(){
       // Add scrollspy to <body>
