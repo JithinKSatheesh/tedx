@@ -2500,78 +2500,67 @@ Cover
 /*  ----------------------------------------------------
 7 Price box
 -------------------------------------------------------- */
-.price_box {
-  position: relative;
-  padding: 75px 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  background-color: #f0f2f6;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-.price_box .price_highlight {
-  background-color: #f50136;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 15px;
-  color: #fff;
-}
-.price_box .price_header h4 {
-  font-size: 24px;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-.price_box .price_header h6 {
-  font-size: 14px;
-  text-transform: capitalize;
-  color: #838383;
-  font-weight: 400;
-}
-.price_box .price_tag {
-  padding: 15px 0;
-  text-transform: capitalize;
-  color: #18181c;
-  font-size: 48px;
-  font-weight: 700;
-}
-.price_box .price_tag sup {
-  font-size: 24px;
-  font-weight: 400;
-  top: -15px;
-  left: -7px;
-  color: #838383;
-}
-.price_box .price_features ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.price_box .price_features ul li {
-  padding: 7px;
-  font-size: 14px;
-  font-weight: 400;
-}
-.price_box .price_footer {
-  margin-top: 30px;
-}
-.price_box:hover {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+section.pricing {
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff, #ffffff);
 }
 
-.price_box.active {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
 }
 
 /*  ----------------------------------------------------
