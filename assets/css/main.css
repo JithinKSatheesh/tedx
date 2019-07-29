@@ -3166,3 +3166,52 @@ textarea.form-control {
 .accordion_card .card-body {
   font-size: 16px;
 }
+
+.box{
+  position:fixed;
+  top:-200px;
+  left:30%;
+  right:30%;
+  background-color:rgb(0, 0, 0);
+  color:#f50136;
+  padding:20px;
+  border:2px solid rgb(0, 0, 0);
+  -moz-border-radius: 20px;
+  -webkit-border-radius:20px;
+  -khtml-border-radius:20px;
+  -moz-box-shadow: 0 1px 5px #333;
+  -webkit-box-shadow: 0 1px 5px #333;
+  z-index:101;
+}
+a.boxclose{
+  float:right;
+  width:26px;
+  height:26px;
+  background:transparent url(assets/img/cancel.png) repeat top left;
+  margin-top:-30px;
+  margin-right:-30px;
+  cursor:pointer;
+}
+
+.box h1{
+  border-bottom: 1px dashed rgb(0, 0, 0);
+  margin:-20px -20px 0px -20px;
+  padding:10px;
+  background-color:rgb(0, 0, 0);
+  color:#f50136;
+  -moz-border-radius:20px 20px 0px 0px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -khtml-border-top-left-radius: 20px;
+  -khtml-border-top-right-radius: 20px;
+}
+
+.overlay{
+  background:transparent url(assets/img/overlay.png) repeat top left;
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  z-index:100;
+}
