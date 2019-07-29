@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="assets/css/docs-bootstrap.css" />
     <link rel="stylesheet" href="assets/css/pongstagr.am.css" />
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="mainbody">
 <div class="full"></div>
 <div class="loader">
     <div class="loader-outter"></div>
@@ -218,9 +218,9 @@
     </div>
     <div class="row justify-content-center no-gutters">
         <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
+            <div class="speaker_box" >
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/s1.png" alt="speaker name">
+                    <img src="assets/img/speakers/s1.png" id="speakerbox" alt="speaker name">
                     <div class="info_box" id="info_box">
                         <h5 class="name">Patricia Stone</h5>
                         <p class="position">CEO Company</p>
@@ -592,7 +592,12 @@
             $('#box').animate({'top':'160px'},500);
         });
     });
-    $('#boxclose').click(function(){
+    $('#speakerbox').click(function(){
+        $('#overlay').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},500);
+        });
+    });
+    $('#mainbody').click(function(){
         $('#box').animate({'top':'-200px'},500,function(){
             $('#overlay').fadeOut('fast');
         });
