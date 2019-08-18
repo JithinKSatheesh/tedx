@@ -1,8 +1,5 @@
 /*
- * Evento -  Event html  Template
- * Build Date: jan 2018
- * Author: colorlib
- * Copyright (C) 2018 colorlib
+ * 
  */
 /* ------------------------------------- */
 /* TABLE OF CONTENTS
@@ -59,6 +56,7 @@ h2,
 .h2 {
   font-size: 42px;
   margin-bottom: 25px;
+
 }
 
 h3,
@@ -83,6 +81,7 @@ h6,
 .h6 {
   font-size: 14px;
   margin-bottom: 10px;
+  color: white;
 }
 
 p {
@@ -91,7 +90,8 @@ p {
   margin: 0 0 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #838383;
+  /*color: #838383;*/
+  color: black;
 }
 
 p:last-child {
@@ -343,7 +343,7 @@ img {
 
   .theme-name {
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .text-center-xs {
