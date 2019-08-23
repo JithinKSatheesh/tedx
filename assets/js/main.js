@@ -129,7 +129,15 @@ $(document).ready(function() {
 
 
         /* --------------------------------------------------------
-    MAPS
+    Tickets
     ----------------------------------------------------------- */
+
+    $(".tickets_call").click(function(){
+       $('.tickets').css("display","block");
+    });
+    $('.close_btn').click(function(){
+        $('.tickets').css("display","none");
+    });
+    
     
 });

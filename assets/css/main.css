@@ -1,4 +1,4 @@
-/*
+
  * 
  */
 /* ------------------------------------- */
@@ -3452,4 +3452,68 @@ textarea.form-control {
   background-image: url('../img/bg/bg-img.png');
 }
 
-/**/
+
+
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*---Tickets-----------------------------------------------*/
+.tickets
+{
+    background:rgba(0,0,0,.9);
+    cursor:pointer;
+    display: none;
+    height:100vh;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100vw;
+    z-index:10000;
+}
+
+.popup_public{
+  max-width: 700px;
+  height: 80vh;
+  max-height: 500px;
+  background-color: white;
+  margin:0 auto;
+  margin-top: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.close_btn_bar{
+ width: 100%;
+  
+}
+.close_btn{
+  padding: 5px;
+  position: inline-block;
+  float: right;
+  right: 0;
+  text-align: center;
+  border:2px solid #ED3835;
+  background-color: #ED3835;
+  color: white;
+  /*border-bottom-left-radius: 25%; */
+  /*border-bottom-right-radius: 25%;*/
+
+}
+
+@media (max-width: 700px){
+  .tickets{
+    width: 100%;
+  }
+  .popup_public{
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 ;
+    border-radius: 0px;
+    height: 100vh;
+    max-height: 2000px;
+  }
+}
+
+
+/*
